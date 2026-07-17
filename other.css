@@ -163,21 +163,3 @@ article h3 {
 #buttonLink {
   margin-top: 4%;
 }
-
-footer {
-
-  background: var(--dark);
-
-  color: white;
-
-  padding: 70px 0;
-
-}
-
-footer .container {
-
-  display: flex;
-
-  justify-content: space-between;
-
-}

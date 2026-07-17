@@ -1124,6 +1124,7 @@ section {
 
 /* Tablets e telas médias */
 @media (max-width: 992px) {
+
     .hero .container {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1172,33 +1173,36 @@ section {
 
 /* Celulares */
 @media (max-width: 768px) {
-    .hero-bg-image {
-        background-image: url(central_celular.png);
-        background-repeat: no-repeat;
+    .hero-content {
 
-        /* Centraliza a imagem na horizontal e na vertical */
-        background-position: center center;
-
-        /* Faz a imagem cobrir todo o espaço disponível sem distorcer */
-        background-size: cover;
-
-        /* Garante que o bloco ocupe toda a largura */
-        width: 100%;
-
-        /* Define uma altura flexível (mude o valor em px conforme o layout do seu site) */
-        min-height: 400px;
-        height: 50vh;
-        /* Ocupa 50% da altura da tela do dispositivo */
-
-        height: 0;
-        /* Zera a altura fixa para evitar distorções */
-        padding-top: 147%;
-        /* Cria a altura proporcional perfeita baseada na imagem */
-    }
-
-    .hero-stats {
+        top: 90%;
         display: flex;
     }
+
+    .hero-content p {
+        display: none;
+    }
+
+    .hero-buttons .btn-primary {
+        display: none;
+    }
+
+    .hero-buttons .btn-secondary {
+        display: none;
+    }
+
+    .hero-buttons img {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 100px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     .stat-number {
         display: block;
@@ -1210,6 +1214,16 @@ section {
     .stat-label {
         font-size: 0.875rem;
         color: white;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav a {
+        margin-right: 20%;
     }
 
     .nav-menu {
@@ -1234,6 +1248,8 @@ section {
 
     .nav-toggle {
         display: flex;
+
+
     }
 
     .nav-toggle.active span:nth-child(1) {
@@ -1250,11 +1266,6 @@ section {
 
     .hero {
         padding: 120px 0 60px;
-    }
-
-    .hero-stats {
-        flex-direction: column;
-        gap: 20px;
     }
 
     section {
@@ -1280,7 +1291,7 @@ section {
     }
 
     .footer-links {
-        flex-direction: column;
+        display: flex;
         gap: 15px;
     }
 }

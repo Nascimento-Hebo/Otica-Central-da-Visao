@@ -49,7 +49,10 @@
     <section class="hero" id="inicio">
         <!-- Imagem de fundo com overlay para criar profundidade -->
         <div class="hero-background">
-            <img src="img-central.png" alt="Consultório odontológico moderno" class="hero-bg-image">
+            <picture>
+                <source media="(768px)" srcset="central_celular.png">
+                <img src="img-central.png" alt="Consultório odontológico moderno" class="hero-bg-image">
+            </picture>
             <div class="hero-overlay"></div>
         </div>
         <div class="container">
@@ -84,6 +87,8 @@
                     <a href="https://wa.me/41995644316?text=Olá!+Tudo bem?+Gostaria+de+agendar+uma+consulta+oftamológica."
                         class="btn btn-secondary" target="_blank">Falar no
                         WhatsApp</a>
+
+                    <img src="img/whatsapp-brands-solid.png" alt="">
                 </div>
 
             </div>
@@ -99,11 +104,55 @@
         </div>
     </section>
 
+
+
+    <section class="servicos" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cuidado completo para sua visão</h2>
+                <p>Da consulta ao acabamento da sua armação</p>
+            </div>
+            <div class="servicos-grid">
+                <!-- EDITÁVEL: Cards de serviços/produtos -->
+                <!-- Card com imagem de limpeza dental -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="./gettyimages-2209045268-612x612.jpg" alt="Limpeza e Prevenção">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Exame de vista</h3>
+                        <p>Equipamentos modernos para maior precisão.</p>
+
+                    </div>
+                </div>
+                <!-- Card com imagem de clareamento -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="./consulta.jpg" alt="Clareamento Dental">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Consultoria</h3>
+                        <p>Encontramos a armação perfeita para você.</p>
+
+                    </div>
+                </div>
+                <!-- Card com imagem de implantes -->
+                <div class="servico-card">
+                    <div class="servico-image">
+                        <img src="./marcas.jpg" alt="Implantes Dentários">
+                    </div>
+                    <div class="servico-content">
+                        <h3>Lentes Premium</h3>
+                        <p>Trabalhamos com as melhores marcas do mercado.</p>
+                    </div>
+                </div>
+
+    </section>
     <!-- =====================================================
          SOBRE - História e diferenciais da clínica
          EDITÁVEL: Textos sobre a empresa
-         ===================================================== -->
-    <section class="services">
+
+         <section class="services">
 
         <div class="title">
 
@@ -165,6 +214,8 @@
         </div>
 
     </section>
+         ===================================================== -->
+
 
 
     <section class="collection">
