@@ -1173,9 +1173,23 @@ section {
 /* Celulares */
 @media (max-width: 768px) {
     .hero-bg-image {
+        background-image: url(central_celular.png);
+        background-repeat: no-repeat;
 
+        /* Centraliza a imagem na horizontal e na vertical */
+        background-position: center center;
+
+        /* Faz a imagem cobrir todo o espaço disponível sem distorcer */
+        background-size: cover;
+
+        /* Garante que o bloco ocupe toda a largura */
         width: 100%;
-        /* Ocupa toda a largura disponível da tela */
+
+        /* Define uma altura flexível (mude o valor em px conforme o layout do seu site) */
+        min-height: 400px;
+        height: 50vh;
+        /* Ocupa 50% da altura da tela do dispositivo */
+
         height: 0;
         /* Zera a altura fixa para evitar distorções */
         padding-top: 147%;
