@@ -1173,10 +1173,16 @@ section {
 
 /* Celulares */
 @media (max-width: 768px) {
-    .hero-content {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .hero-content {
+        left: -170px;
         top: 90%;
         display: flex;
+
     }
 
     .hero-content p {
@@ -1195,7 +1201,7 @@ section {
         position: fixed;
         bottom: 15px;
         right: 15px;
-        width: 100px;
+        width: 80px;
     }
 
     .container {
@@ -1265,11 +1271,14 @@ section {
     }
 
     .hero {
+
         padding: 120px 0 60px;
+
     }
 
     section {
         padding: 60px 0;
+
     }
 
     /* Galeria responsiva para celulares */
