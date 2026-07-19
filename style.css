@@ -181,7 +181,7 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background: #050016;
+    background: #fff;
     box-shadow: var(--shadow);
     z-index: 1000;
     padding: 20px 0;
@@ -191,12 +191,19 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
+
+.textOpen {
+    color: green;
+}
+
+
 
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: white;
+    color: #050016;
 }
 
 .nav-menu {
@@ -206,7 +213,7 @@ p {
 
 .nav-menu a {
     font-weight: 500;
-    color: white;
+    color: #050016;
     transition: var(--transition);
     position: relative;
 }
@@ -388,6 +395,14 @@ article h3 {
     gap: 15px;
     flex-wrap: wrap;
     margin-bottom: 40px;
+}
+
+.hero-buttons img {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 70px;
+    border-radius: 50%;
 }
 
 .hero-stats {
@@ -1176,21 +1191,27 @@ section {
     .container {
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
 
     .hero-content {
-        left: -170px;
+        left: 20px;
         top: 90%;
-        display: flex;
-
+        width: 50%;
+        margin-left: 24%;
     }
 
     .hero-content p {
         display: none;
     }
 
+    .hero-buttons {
+        width: 100%;
+    }
+
     .hero-buttons .btn-primary {
-        display: none;
+        font-size: 14px;
+        width: 60%;
     }
 
     .hero-buttons .btn-secondary {
@@ -1201,7 +1222,8 @@ section {
         position: fixed;
         bottom: 15px;
         right: 15px;
-        width: 80px;
+        width: 50px;
+        border-radius: 50%;
     }
 
     .container {
@@ -1209,24 +1231,25 @@ section {
         justify-content: space-between;
     }
 
-
-    .stat-number {
-        display: block;
-        font-size: 1.75rem;
-        font-weight: 800;
-        color: white;
+    .hero-stats {
+        display: none;
     }
 
-    .stat-label {
-        font-size: 0.875rem;
-        color: white;
-    }
 
     .nav {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
+
+
+
+    nav .textOpen {
+        position: absolute;
+        left: 10px;
+        bottom: 34px;
+    }
+
 
     .nav a {
         margin-right: 20%;
@@ -1332,5 +1355,13 @@ section {
 
     .hero-buttons .btn {
         width: 100%;
+    }
+
+    .hero-buttons img {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        border-radius: 50%;
     }
 }

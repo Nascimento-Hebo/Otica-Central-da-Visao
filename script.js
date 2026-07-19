@@ -19,6 +19,21 @@
 /* =====================================================
       contador de clientes
       ===================================================== */
+const funcTime = document.getElementById('funcTime')
+const agora = new Date().getTime()
+const weekendDay = new Date().getDay()
+console.log(weekendDay)
+
+if (agora >= 8 && agora <= 18) {
+    funcTime.textContent = 'Aberto'
+
+} else {
+    funcTime.textContent = 'fechado'
+    funcTime.style.color = 'red'
+}
+
+
+
 let contNumber = document.getElementById('contador');
 let num = 1
 
