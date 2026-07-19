@@ -34,6 +34,7 @@ if (agora >= 8 && agora <= 18) {
 
 
 
+
 let contNumber = document.getElementById('contador');
 let num = 1
 

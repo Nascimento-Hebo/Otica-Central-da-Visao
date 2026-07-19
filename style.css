@@ -1196,7 +1196,7 @@ section {
 
     .hero-content {
         left: 20px;
-        top: 90%;
+        top: 84%;
         width: 50%;
         margin-left: 24%;
     }
@@ -1246,8 +1246,8 @@ section {
 
     nav .textOpen {
         position: absolute;
-        left: 10px;
-        bottom: 34px;
+        right: 2px;
+        bottom: -19px;
     }
 
 
@@ -1299,6 +1299,11 @@ section {
 
     }
 
+    .hero-stats {
+        display: none;
+
+    }
+
     section {
         padding: 60px 0;
 
@@ -1332,7 +1337,7 @@ section {
 @media (max-width: 480px) {
 
     .hero-stats {
-        display: flex;
+        display: none;
 
     }
 
