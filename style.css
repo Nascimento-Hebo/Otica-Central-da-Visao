@@ -632,6 +632,7 @@ section {
     overflow: hidden;
 }
 
+
 .servico-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
@@ -1188,15 +1189,23 @@ section {
 
 /* Celulares */
 @media (max-width: 768px) {
+
+
     .container {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
+    .hero-background {
+        height: 600px;
+        width: 100%;
+
+    }
+
     .hero-content {
         left: 20px;
-        top: 84%;
+        top: 40%;
         width: 50%;
         margin-left: 24%;
     }
@@ -1211,7 +1220,7 @@ section {
 
     .hero-buttons .btn-primary {
         font-size: 14px;
-        width: 60%;
+        width: 70%;
     }
 
     .hero-buttons .btn-secondary {
@@ -1226,9 +1235,15 @@ section {
         border-radius: 50%;
     }
 
+    .servicos {
+        margin-top: -580px;
+
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
+
     }
 
     .hero-stats {
