@@ -1363,6 +1363,23 @@ section {
         margin-left: 24%;
     }
 
+    .servicos {
+        background-color: #00b4d8;
+        margin-top: -648px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
     .hero-stats {
         display: none;
 
@@ -1395,10 +1412,5 @@ section {
         right: 15px;
         width: 50px;
         border-radius: 50%;
-    }
-
-    .servicos {
-        background-color: #00b4d8;
-        margin-top: -500px;
     }
 }
