@@ -1350,6 +1350,18 @@ section {
 
 /* Celulares pequenos */
 @media (max-width: 480px) {
+    .hero-background {
+        height: 520px;
+        width: 100%;
+
+    }
+
+    .hero-content {
+        left: 20px;
+        top: 34%;
+        width: 50%;
+        margin-left: 24%;
+    }
 
     .hero-stats {
         display: none;
@@ -1386,6 +1398,7 @@ section {
     }
 
     .servicos {
-        margin-top: -430px;
+        background-color: #00b4d8;
+        margin-top: -648px;
     }
 }
