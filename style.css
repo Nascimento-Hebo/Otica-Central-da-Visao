@@ -1236,7 +1236,7 @@ section {
     }
 
     .servicos {
-        margin-top: -540px;
+        margin-top: -560px;
 
     }
 
@@ -1383,5 +1383,9 @@ section {
         right: 15px;
         width: 50px;
         border-radius: 50%;
+    }
+
+    .servicos {
+        margin-top: -430px;
     }
 }
